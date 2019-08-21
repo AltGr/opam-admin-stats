@@ -1,0 +1,6 @@
+opam-version: "2.0"
+version: "2.0"
+build: ["ocamlfind" "ocamlopt" "-package" "opam-format" "-linkpkg" "opam_stats.ml" "-o" "opam-stats"]
+install: ["cp" "opam-stats" bin]
+depends: ["ocaml" "opam-format"]
+synopsis: "Small program for generating basic stats from an opam repository"
